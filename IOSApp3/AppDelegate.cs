@@ -21,6 +21,9 @@ namespace IOSApp3
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+#if DEBUG 
+            Xamarin.Calabash.Start();
+#endif
             AppCenter.Start("c6f031c0-b80d-4965-abe0-100667e6b012",
                    typeof(Analytics), typeof(Crashes));
 
