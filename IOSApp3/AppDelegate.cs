@@ -1,5 +1,8 @@
 ﻿using Foundation;
 using UIKit;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace IOSApp3
 {
@@ -18,6 +21,9 @@ namespace IOSApp3
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+            AppCenter.Start("c6f031c0-b80d-4965-abe0-100667e6b012",
+                   typeof(Analytics), typeof(Crashes));
+
             // create a new window instance based on the screen size
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
             Window.RootViewController = new UIViewController();
