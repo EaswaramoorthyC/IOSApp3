@@ -10,7 +10,8 @@ namespace IOSXamainUITest1
         {
 
 
-            return ConfigureApp.iOS.InstalledApp("com.PepsiCo.SalesHub2 - B.QA").StartApp();
+            //return ConfigureApp.iOS.InstalledApp("com.PepsiCo.SalesHub2 - B.QA").StartApp();
+            return ConfigureApp.iOS.InstalledApp("com.companyname.IOSApp3").StartApp();
         }
     }
 }
