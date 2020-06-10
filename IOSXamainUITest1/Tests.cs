@@ -32,6 +32,7 @@ namespace IOSXamainUITest1
             app.Screenshot("Welcome screen.");
 
             Assert.IsTrue(results.Any());
+            //welcome scree
         }
     }
 }
